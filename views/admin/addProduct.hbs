@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='/stylesheets/addP.css' />
+
+    <title>Document</title>
+</head>
+<body>
+    {{>adminNav}}
+    <div class="container">  
+  <form  id="contact" action="/admin/addProduct" method="post" enctype="multipart/form-data">
+    <h3 style="text-align: center;">ADD PRODUCT</h3>
+    <h4></h4>
+    <fieldset>
+      <input placeholder="Product name" name="name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Product Price" name="price" type="text" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Description" name="description" type="text" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="offer" name="offer" type="number" tabindex="4" style="width: 100%;" required>
+    </fieldset>
+    <fieldset>
+        <input type="file" name="image">
+    </fieldset>
+    <fieldset>
+      <button  type="submit" id="contact-submit" data-submit="...Sending">Add</button>
+    </fieldset>
+  </form>
+ 
+  
+</div>
+</body>
+</html>
